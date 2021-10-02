@@ -13,9 +13,7 @@ module.exports = {
     ),
 
   async execute(interaction) {
-    if (
-      interaction.options.getBoolean('plaintext') == true
-    ) {
+    if (interaction.options.getBoolean('plaintext') == true) {
       await interaction.reply({
         content:
           '**Codecademy Help Center:** https://help.codecademy.com/hc/en-us\n' +
