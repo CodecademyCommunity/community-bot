@@ -4,7 +4,7 @@ const { MessageEmbed } = require('discord.js');
 module.exports = {
   data: new SlashCommandBuilder()
     .setName('helpcenter')
-    .setDescription('Provies information to access the helcenter!')
+    .setDescription('Provides information to access the helpcenter!')
     .addBooleanOption((option) =>
       option
         .setName('plaintext')
