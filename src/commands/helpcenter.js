@@ -5,7 +5,7 @@ module.exports = {
   data: new SlashCommandBuilder()
     .setName('helpcenter')
     .setDescription('Provies information to access the helcenter!')
-    .addStringOption((option) =>
+    .addBooleanOption((option) =>
         option
             .setName("plaintext")
             .setDescription("Provides helpcenter in plaintext format")
@@ -13,14 +13,13 @@ module.exports = {
     ),
 
     async execute(interaction) {
-        if (interaction.options.getString('plaintext') == "plaintext" || interaction.options.getString('plaintext') == "true") {
+        if (interaction.options.getBoolean('plaintext') == true) {
             await interaction.reply({
                 content: (
                 '**Codecademy Help Center:** https://help.codecademy.com/hc/en-us\n' +
                 '**Submit A Request:** https://help.codecademy.com/hc/en-us/requests/new\n' +
                 '**Bug Reporting:** To report a bug, click *Get Unstuck* in the learning environment, then click *Bugs*.\n' +
                 'All billing-related queries should be directed to the Submit A Request form linked above.'),
-                fetchReply: true,
             })
         } else {
             const HelpCenterMessage = new MessageEmbed()
