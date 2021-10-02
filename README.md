@@ -8,8 +8,8 @@ A fun utility bot built by and for the Codecademy Community to seperate fun/util
 
 ## Current Commands
 
-| Command       | Arguments  | Permission | Description                                    |
-| :------------ | :--------- | :--------- | :--------------------------------------------- |
-| `/ping`       | N/A        | Everyone   | Displays bot latency.                          |
-| `/format`     | {language} | Everyone   | Formats a codeblock.                           |
-| `/helpcenter` | {plaintext}| Everyone   | Displays information for accessing helpcenter. |
+| Command       | Arguments   | Permission | Description                                    |
+| :------------ | :---------- | :--------- | :--------------------------------------------- |
+| `/ping`       | N/A         | Everyone   | Displays bot latency.                          |
+| `/format`     | {language}  | Everyone   | Formats a codeblock.                           |
+| `/helpcenter` | {plaintext} | Everyone   | Displays information for accessing helpcenter. |
