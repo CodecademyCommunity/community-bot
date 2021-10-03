@@ -8,21 +8,26 @@ Please review the _Issues_ tab and self-assign or ask to be assigned to one if y
 
 If you don't have it already, install/setup Git on your machine.
 
-### Clone This Repo
+### Fork/Clone This Repo
 
-1. In the main page of the repo, notice the big green button that says "Code". Click it.
-2. Using the HTTPS or SSH option, copy the URL.
-3. If you are using HTTPS, using Git Bash/Terminal/Bash, navigate to the folder where you want this repo to be located in your machine and use:
+*If you are a member of our organization, skip step 1.*
+
+1. In the top-right corner of the page, click the Fork button.
+2. In the main page of the repo, notice the big green button that says "Code". Click it.
+3. Using the HTTPS or SSH option, copy the URL.
+4. If you are using HTTPS, using Git Bash/Terminal/Bash, navigate to the folder where you want this repo to be located in your machine and use:
 
 ```
 $ git clone pasteURLYouJustCopied
 ```
 
-4. If you are using SSH, follow this [GitHub tutorial](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh).
+5. If you are using SSH, follow this [GitHub tutorial](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh).
+
+*If you become a regular contributor, we will add you to the organization so you can work off a direct clone instead.*
 
 ### Node.js and npm
 
-1. Install Node.js; it can be downloaded from [here](https://nodejs.org/en/).
+1. Install Node.js; it can be downloaded from [here](https://nodejs.org/en/). This project requires version 16.x or higher.
 2. On the command line, navigate to the cloned repo.
 3. Use the following command to install all necessary packages:
 
@@ -48,7 +53,7 @@ $ npm install
 
 ### Run the Bot
 
-1. Navigate to your local repo and enter the following command into your terminal:
+1. Navigate to your local repo and enter the following command into your terminal. This command must be run every time a command is added or updated, but not for non-command changes.
 ```
 $ npm run deploy-commands
 ```
@@ -62,7 +67,7 @@ $ npm start
 
 ## Advanced Setup (optional)
 
-For information about our pre-commit hook and setting up your local environment to use ESLint, Prettier and Git Blame, check out the [Advanced Setup page](https://github.com/CodecademyCommunity/codecademy-discord-bot/wiki/Advanced-Setup) of our moderation bot wiki.
+*This has yet to be added to this project.* For information about our pre-commit hook and setting up your local environment to use ESLint, Prettier and Git Blame, check out the [Advanced Setup page](https://github.com/CodecademyCommunity/codecademy-discord-bot/wiki/Advanced-Setup) of our moderation bot wiki.
 
 ## Repository Git Workflow
 
