@@ -10,7 +10,7 @@ If you don't have it already, install/setup Git on your machine.
 
 ### Fork/Clone This Repo
 
-*If you are a member of our organization, skip step 1.*
+_If you are a member of our organization, skip step 1._
 
 1. In the top-right corner of the page, click the Fork button.
 2. In the main page of the repo, notice the big green button that says "Code". Click it.
@@ -23,7 +23,7 @@ $ git clone pasteURLYouJustCopied
 
 5. If you are using SSH, follow this [GitHub tutorial](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh).
 
-*If you become a regular contributor, we will add you to the organization so you can work off a direct clone instead.*
+_If you become a regular contributor, we will add you to the organization so you can work off a direct clone instead._
 
 ### Node.js and npm
 
@@ -54,6 +54,7 @@ $ npm install
 ### Run the Bot
 
 1. Navigate to your local repo and enter the following command into your terminal. This command must be run every time a command is added or updated, but not for non-command changes.
+
 ```
 $ npm run deploy-commands
 ```
@@ -68,7 +69,7 @@ $ npm start
 
 ## Advanced Setup (optional)
 
-*This has yet to be added to this project.* For information about our pre-commit hook and setting up your local environment to use ESLint, Prettier and Git Blame, check out the [Advanced Setup page](https://github.com/CodecademyCommunity/codecademy-discord-bot/wiki/Advanced-Setup) of our moderation bot wiki.
+_This has yet to be added to this project._ For information about our pre-commit hook and setting up your local environment to use ESLint, Prettier and Git Blame, check out the [Advanced Setup page](https://github.com/CodecademyCommunity/codecademy-discord-bot/wiki/Advanced-Setup) of our moderation bot wiki.
 
 ## Repository Git Workflow
 
