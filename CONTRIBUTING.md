@@ -49,11 +49,13 @@ $ npm install
 ### Run the Bot
 
 1. Navigate to your local repo and enter the following command into your terminal:
+
 ```
 $ npm run deploy-commands
 ```
 
 2. Next, start up the bot using the following command in your terminal:
+
 ```
 $ npm start
 ```
