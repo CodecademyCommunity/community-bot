@@ -59,6 +59,7 @@ $ npm run deploy-commands
 ```
 
 2. Next, start up the bot using the following command in your terminal:
+
 ```
 $ npm start
 ```
