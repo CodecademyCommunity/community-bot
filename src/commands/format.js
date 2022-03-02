@@ -40,13 +40,11 @@ async function formatCode(interaction) {
   const msg = messages.first();
   const code = msg.content;
   
-  try {
-    await interaction.channel.messages.delete(msg.id);
-  } catch (error) {
+  interaction.channel.messages.delete(msg.id).catch((error) => {
     if (error.code !== Constants.APIErrors.UNKNOWN_MESSAGE) {
       console.error('Failed to delete the message:', error);
     }
-  }
+  });
 
   const formatted = codeBlock(language, code);
   interaction.editReply(formatted);
