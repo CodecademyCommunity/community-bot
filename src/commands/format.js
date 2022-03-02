@@ -39,7 +39,7 @@ async function formatCode(interaction) {
 
   const msg = messages.first();
   const code = msg.content;
-  
+
   interaction.channel.messages.delete(msg.id).catch((error) => {
     if (error.code !== Constants.APIErrors.UNKNOWN_MESSAGE) {
       console.error('Failed to delete the message:', error);
