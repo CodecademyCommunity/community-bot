@@ -1,3 +1,4 @@
+const { Constants } = require('discord.js');
 const { SlashCommandBuilder } = require('@discordjs/builders');
 const { codeBlock } = require('@discordjs/builders');
 
@@ -38,7 +39,12 @@ async function formatCode(interaction) {
 
   const msg = messages.first();
   const code = msg.content;
-  interaction.channel.messages.delete(msg.id);
+
+  interaction.channel.messages.delete(msg.id).catch((error) => {
+    if (error.code !== Constants.APIErrors.UNKNOWN_MESSAGE) {
+      console.error('Failed to delete the message:', error);
+    }
+  });
 
   const formatted = codeBlock(language, code);
   interaction.editReply(formatted);
