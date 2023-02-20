@@ -4,6 +4,8 @@
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
+**Note: This project has been archived**
+
 A fun utility bot built by and for the Codecademy Community to seperate fun/utility commands fron the moderation bot.
 
 ## Current Commands
